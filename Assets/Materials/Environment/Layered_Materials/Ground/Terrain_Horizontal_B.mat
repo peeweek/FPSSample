@@ -9,15 +9,22 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Terrain_Horizontal_B
   m_Shader: {fileID: 4800000, guid: eab0538d9d5746246806a9611c04ac4d, type: 3}
-  m_ShaderKeywords: _ALBEDOAFFECTEMISSIVE_OFF _ALPHACUTOFFENABLE_OFF _DENSITY_MODE _DEPTHOFFSETENABLE_OFF _DISPLACEMENTLOCKOBJECTSCALE_OFF _DISPLACEMENTLOCKTILINGSCALE_OFF _DISTORTIONDEPTHTEST_OFF _DISTORTIONENABLE_OFF _DISTORTIONONLY_OFF _DOUBLESIDEDENABLE_OFF _ENABLEFPSMODE_OFF _ENABLESPECULAROCCLUSION_OFF _ENABLEWIND_OFF _HEIGHTMAP0 _HEIGHTMAP1 _HEIGHTMAP2 _HEIGHTMAP3 _HEIGHT_BASED_BLEND _LAYEREDLIT_4_LAYERS _LAYER_MAPPING_PLANAR0 _LAYER_MAPPING_PLANAR1 _LAYER_MAPPING_PLANAR2 _LAYER_MAPPING_PLANAR3 _LAYER_MASK_VERTEX_COLOR_MUL _MASKMAP0 _MASKMAP1 _MASKMAP2 _MASKMAP3 _MATERIAL_FEATURE_SUBSURFACE_SCATTERING _MATERIAL_FEATURE_TRANSMISSION _NORMALMAP0 _NORMALMAP1 _NORMALMAP2 _NORMALMAP3 _NORMALMAP_TANGENT_SPACE0 _NORMALMAP_TANGENT_SPACE1 _NORMALMAP_TANGENT_SPACE2 _NORMALMAP_TANGENT_SPACE3 _OBJECTSCALEAFFECTTILE_OFF _OPACITYASDENSITY0_OFF _OPACITYASDENSITY1_OFF _OPACITYASDENSITY2_OFF _OPACITYASDENSITY3_OFF _TESSELLATION_DISPLACEMENT _THICKNESSMAP1 _USEDENSITYMODE_OFF _USEHEIGHTBASEDBLEND_OFF _USEMAINLAYERINFLUENCE_OFF
+  m_ShaderKeywords: _DENSITY_MODE _HEIGHTMAP0 _HEIGHTMAP1 _HEIGHTMAP2 _HEIGHTMAP3
+    _HEIGHT_BASED_BLEND _LAYEREDLIT_4_LAYERS _LAYER_MAPPING_PLANAR0 _LAYER_MAPPING_PLANAR1
+    _LAYER_MAPPING_PLANAR2 _LAYER_MAPPING_PLANAR3 _LAYER_MASK_VERTEX_COLOR_MUL _MASKMAP0
+    _MASKMAP1 _MASKMAP2 _MASKMAP3 _NORMALMAP0 _NORMALMAP1 _NORMALMAP2 _NORMALMAP3
+    _NORMALMAP_TANGENT_SPACE0 _NORMALMAP_TANGENT_SPACE1 _NORMALMAP_TANGENT_SPACE2
+    _NORMALMAP_TANGENT_SPACE3 _TESSELLATION_DISPLACEMENT _THICKNESSMAP1
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2000
-  stringTagMap: {}
+  m_CustomRenderQueue: 2225
+  stringTagMap:
+    MotionVector: User
   disabledShaderPasses:
   - DistortionVectors
   - MOTIONVECTORS
+  - RayTracingPrepass
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -273,6 +280,18 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
     - _AORemapMax0: 1
     - _AORemapMax1: 0.4336283
@@ -283,9 +302,14 @@ Material:
     - _AORemapMin2: 0
     - _AORemapMin3: 0
     - _ATDistance: 1
+    - _AddPrecomputedVelocity: 0
     - _AlbedoAffectEmissive: 0
     - _AlphaCutoff: 0.5
     - _AlphaCutoffEnable: 0
+    - _AlphaDstBlend: 0
+    - _AlphaSrcBlend: 1
+    - _AlphaToMask: 0
+    - _AlphaToMaskInspectorValue: 0
     - _Anisotropy: 0
     - _BlendMode: 0
     - _CoatCoverage: 1
@@ -312,6 +336,10 @@ Material:
     - _DiffusionProfile1: 2
     - _DiffusionProfile2: 0
     - _DiffusionProfile3: 0
+    - _DiffusionProfileHash0: 2.4726474
+    - _DiffusionProfileHash1: 0
+    - _DiffusionProfileHash2: 0
+    - _DiffusionProfileHash3: 0
     - _DisplacementLockObjectScale: 0
     - _DisplacementLockTilingScale: 0
     - _DisplacementMode: 3
@@ -333,7 +361,9 @@ Material:
     - _Drag: 1
     - _DstBlend: 0
     - _EmissiveColorMode: 1
+    - _EmissiveExposureWeight: 1
     - _EmissiveIntensity: 0
+    - _EmissiveIntensityUnit: 0
     - _EnableBlendModePreserveSpecularLighting: 1
     - _EnableFogOnTransparent: 1
     - _EnableFpsMode: 0
@@ -406,12 +436,20 @@ Material:
     - _LinkDetailsWithBase1: 1
     - _LinkDetailsWithBase2: 0
     - _LinkDetailsWithBase3: 0
-    - _MaterialID: 0
+    - _MaterialID: 1
     - _Metallic: 0
     - _Metallic0: 0
     - _Metallic1: 1
     - _Metallic2: 0
     - _Metallic3: 0
+    - _MetallicRemapMax0: 1
+    - _MetallicRemapMax1: 1
+    - _MetallicRemapMax2: 1
+    - _MetallicRemapMax3: 1
+    - _MetallicRemapMin0: 0
+    - _MetallicRemapMin1: 0
+    - _MetallicRemapMin2: 0
+    - _MetallicRemapMin3: 0
     - _NormalMapSpace: 0
     - _NormalMapSpace0: 0
     - _NormalMapSpace1: 0
@@ -427,12 +465,15 @@ Material:
     - _OpacityAsDensity1: 0
     - _OpacityAsDensity2: 1
     - _OpacityAsDensity3: 0
+    - _OpaqueCullMode: 2
     - _PPDLodThreshold: 5
     - _PPDMaxSamples: 15
     - _PPDMinSamples: 5
     - _PPDPrimitiveLength: 1
     - _PPDPrimitiveWidth: 1
     - _PreRefractionPass: 0
+    - _RayTracing: 0
+    - _ReceivesSSR: 1
     - _RefractionMode: 0
     - _ShiverDirectionality: 0.5
     - _ShiverDrag: 0.2
@@ -458,11 +499,16 @@ Material:
     - _SmoothnessRemapMin3: 0
     - _SpecularAAScreenSpaceVariance: 0.1
     - _SpecularAAThreshold: 0.2
+    - _SpecularOcclusionMode: 1
     - _SrcBlend: 1
-    - _StencilRef: 1
-    - _StencilRefMV: 128
-    - _StencilWriteMask: 7
-    - _StencilWriteMaskMV: 128
+    - _StencilRef: 0
+    - _StencilRefDepth: 8
+    - _StencilRefGBuffer: 10
+    - _StencilRefMV: 40
+    - _StencilWriteMask: 6
+    - _StencilWriteMaskDepth: 8
+    - _StencilWriteMaskGBuffer: 14
+    - _StencilWriteMaskMV: 40
     - _Stiffness: 1
     - _SubsurfaceMask0: 1
     - _SubsurfaceMask1: 1
@@ -502,7 +548,9 @@ Material:
     - _Thickness3: 1
     - _ThicknessMultiplier: 1
     - _TransmissionEnable: 1
+    - _TransparentCullMode: 2
     - _TransparentSortPriority: 0
+    - _TransparentZWrite: 0
     - _UVBase: 0
     - _UVBase0: 4
     - _UVBase1: 4
@@ -516,12 +564,14 @@ Material:
     - _UVDetail3: 0
     - _UVEmissive: 0
     - _UseDensityMode: 0
+    - _UseEmissiveIntensity: 0
     - _UseHeightBasedBlend: 1
     - _UseMainLayerInfluence: 0
     - _VertexColorMode: 1
     - _ZTestDepthEqualForOpaque: 3
     - _ZTestGBuffer: 4
     - _ZTestMode: 8
+    - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
@@ -529,10 +579,17 @@ Material:
     - _BaseColor1: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColor2: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColor3: {r: 1, g: 1, b: 1, a: 1}
+    - _BaseColorMap0_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 0, g: 0, b: 0, a: 1}
+    - _DiffusionProfileAsset0: {r: 2.7163208e+19, g: 1289.7006, b: 3.1574907e+25,
+        a: -1.5460055e+31}
+    - _DiffusionProfileAsset1: {r: 0, g: 0, b: 0, a: 0}
+    - _DiffusionProfileAsset2: {r: 0, g: 0, b: 0, a: 0}
+    - _DiffusionProfileAsset3: {r: 0, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissiveColorLDR: {r: 0, g: 0, b: 0, a: 1}
     - _InvPrimScale: {r: 1, g: 1, b: 0, a: 0}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _ThicknessRemap0: {r: 0, g: 1, b: 0, a: 0}
@@ -552,3 +609,32 @@ Material:
     - _UVMappingMask3: {r: 0, g: 0, b: 0, a: 0}
     - _UVMappingMaskBlendMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMaskEmissive: {r: 1, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
+--- !u!114 &4664752898256331088
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da692e001514ec24dbc4cca1949ff7e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 11
+--- !u!114 &7789006472343753906
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa486462e6be1764e89c788ba30e61f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_DiffusionProfileReferences:
+  - {fileID: 11400000, guid: 8d7bbc5f6b36a144f9f1d069222243f3, type: 2}
+  m_MaterialReferences: []

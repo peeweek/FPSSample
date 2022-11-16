@@ -7,6 +7,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 100000, guid: 127230249d20ca843bef9d9e0e1fb629, type: 3}
+      propertyPath: m_Name
+      value: Building_A_Wall_Destuction_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 127230249d20ca843bef9d9e0e1fb629, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 127230249d20ca843bef9d9e0e1fb629, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 127230249d20ca843bef9d9e0e1fb629, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 127230249d20ca843bef9d9e0e1fb629, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 127230249d20ca843bef9d9e0e1fb629, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 127230249d20ca843bef9d9e0e1fb629, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 127230249d20ca843bef9d9e0e1fb629, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 127230249d20ca843bef9d9e0e1fb629, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 127230249d20ca843bef9d9e0e1fb629, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -18,6 +54,10 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 127230249d20ca843bef9d9e0e1fb629, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 127230249d20ca843bef9d9e0e1fb629, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 127230249d20ca843bef9d9e0e1fb629, type: 3}
       propertyPath: m_LocalRotation.x
@@ -32,14 +72,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 127230249d20ca843bef9d9e0e1fb629, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 127230249d20ca843bef9d9e0e1fb629, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 127230249d20ca843bef9d9e0e1fb629, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: -90.00001
       objectReference: {fileID: 0}
@@ -51,19 +83,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 127230249d20ca843bef9d9e0e1fb629, type: 3}
-      propertyPath: m_Name
-      value: Building_A_Wall_Destuction_A_VARIANT
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300002, guid: 127230249d20ca843bef9d9e0e1fb629, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 8c9f333b3d2610946b2162c63202e77f, type: 2}
-    - target: {fileID: 2300006, guid: 127230249d20ca843bef9d9e0e1fb629, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 8c9f333b3d2610946b2162c63202e77f, type: 2}
     - target: {fileID: 2300000, guid: 127230249d20ca843bef9d9e0e1fb629, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8c9f333b3d2610946b2162c63202e77f, type: 2}
+    - target: {fileID: 2300002, guid: 127230249d20ca843bef9d9e0e1fb629, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 8c9f333b3d2610946b2162c63202e77f, type: 2}
@@ -71,29 +95,9 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 8c9f333b3d2610946b2162c63202e77f, type: 2}
-    - target: {fileID: 100000, guid: 127230249d20ca843bef9d9e0e1fb629, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 80
-      objectReference: {fileID: 0}
-    - target: {fileID: 100004, guid: 127230249d20ca843bef9d9e0e1fb629, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 80
-      objectReference: {fileID: 0}
-    - target: {fileID: 100002, guid: 127230249d20ca843bef9d9e0e1fb629, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 80
-      objectReference: {fileID: 0}
-    - target: {fileID: 100010, guid: 127230249d20ca843bef9d9e0e1fb629, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 80
-      objectReference: {fileID: 0}
-    - target: {fileID: 100008, guid: 127230249d20ca843bef9d9e0e1fb629, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 80
-      objectReference: {fileID: 0}
-    - target: {fileID: 100006, guid: 127230249d20ca843bef9d9e0e1fb629, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 80
-      objectReference: {fileID: 0}
+    - target: {fileID: 2300006, guid: 127230249d20ca843bef9d9e0e1fb629, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8c9f333b3d2610946b2162c63202e77f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 127230249d20ca843bef9d9e0e1fb629, type: 3}
