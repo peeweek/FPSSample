@@ -99,26 +99,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: aa42385bc400a2444862b97328f38a66, type: 3}
 --- !u!1 &297566708882593926 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 100008, guid: aa42385bc400a2444862b97328f38a66,
-    type: 3}
-  m_PrefabInstance: {fileID: 297566708882497070}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &297566708880590414 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2300000, guid: aa42385bc400a2444862b97328f38a66,
-    type: 3}
-  m_PrefabInstance: {fileID: 297566708882497070}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &297566708882593930 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100004, guid: aa42385bc400a2444862b97328f38a66,
-    type: 3}
-  m_PrefabInstance: {fileID: 297566708882497070}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &297566708882593928 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100006, guid: aa42385bc400a2444862b97328f38a66,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 100008, guid: aa42385bc400a2444862b97328f38a66, type: 3}
   m_PrefabInstance: {fileID: 297566708882497070}
   m_PrefabAsset: {fileID: 0}
 --- !u!64 &3599312062205409694
@@ -135,29 +116,3 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300006, guid: aa42385bc400a2444862b97328f38a66, type: 3}
---- !u!114 &6140045183597882529
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 297566708882593930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42a968b42c86d9146a68f3937c63592f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Renderer: {fileID: 297566708880590414}
---- !u!114 &2370145253661660291
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 297566708882593928}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42a968b42c86d9146a68f3937c63592f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Renderer: {fileID: 297566708880590414}

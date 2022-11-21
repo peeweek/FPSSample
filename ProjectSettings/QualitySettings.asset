@@ -7,42 +7,55 @@ QualitySettings:
   m_CurrentQuality: 0
   m_QualitySettings:
   - serializedVersion: 2
-    name: Ultra
+    name: Default
     pixelLightCount: 4
     shadows: 2
     shadowResolution: 2
     shadowProjection: 1
     shadowCascades: 4
     shadowDistance: 150
-    shadowNearPlaneOffset: 2
+    shadowNearPlaneOffset: 3
     shadowCascade2Split: 0.33333334
-    shadowCascade4Split: {x: 0.06666667, y: 0.19999999, z: 0.46666664}
+    shadowCascade4Split: {x: 0.06666667, y: 0.2, z: 0.46666667}
     shadowmaskMode: 1
     skinWeights: 4
     textureQuality: 0
-    anisotropicTextures: 1
-    antiAliasing: 0
-    softParticles: 0
+    anisotropicTextures: 2
+    antiAliasing: 2
+    softParticles: 1
     softVegetation: 1
     realtimeReflectionProbes: 1
     billboardsFaceCameraPosition: 1
     vSyncCount: 1
     lodBias: 1
     maximumLODLevel: 0
-    streamingMipmapsActive: 1
+    streamingMipmapsActive: 0
     streamingMipmapsAddAllCameras: 1
-    streamingMipmapsMemoryBudget: 2048
+    streamingMipmapsMemoryBudget: 512
     streamingMipmapsRenderersPerFrame: 512
     streamingMipmapsMaxLevelReduction: 2
     streamingMipmapsMaxFileIORequests: 1024
-    particleRaycastBudget: 1024
+    particleRaycastBudget: 4096
     asyncUploadTimeSlice: 2
-    asyncUploadBufferSize: 4
+    asyncUploadBufferSize: 16
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-    customRenderPipeline: {fileID: 11400000, guid: 1274afd8f68bac542bf0fbd39813a9a0,
-      type: 2}
+    customRenderPipeline: {fileID: 11400000, guid: 9b73ebe4ce2ebfe469a42b2c49f68740, type: 2}
     excludedTargetPlatforms: []
   m_PerPlatformDefaultQuality:
+    Android: 0
+    GameCoreScarlett: 0
+    GameCoreXboxOne: 0
+    Lumin: 0
+    Nintendo 3DS: 0
+    Nintendo Switch: 0
     PS4: 0
+    PS5: 0
+    Server: 0
+    Stadia: 0
     Standalone: 0
+    WebGL: 0
+    Windows Store Apps: 0
+    XboxOne: 0
+    iPhone: 0
+    tvOS: 0

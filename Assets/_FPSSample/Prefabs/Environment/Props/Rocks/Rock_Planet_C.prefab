@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4328997328015874539}
   - component: {fileID: 4555419100747923390}
   - component: {fileID: 8514274859199961072}
-  - component: {fileID: 5272770667077588072}
   m_Layer: 0
   m_Name: Geom_Rock_Planet_C_LOD01
   m_TagString: Untagged
@@ -29,6 +28,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.0000005709363, y: 0.000000222164, z: -0.0000027663023}
   m_LocalScale: {x: 1.000001, y: 1.0000008, z: 1.0000008}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1268180022601842497}
   m_RootOrder: 2
@@ -52,6 +52,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -82,19 +83,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &5272770667077588072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4208883983940610794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42a968b42c86d9146a68f3937c63592f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Renderer: {fileID: 1268180022599417253}
 --- !u!1001 &1268180022601704901
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -196,28 +184,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45676db7f5fcd0c469341854f59be412, type: 3}
---- !u!1 &1268180022601605985 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100004, guid: 45676db7f5fcd0c469341854f59be412,
-    type: 3}
-  m_PrefabInstance: {fileID: 1268180022601704901}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1268180022601842497 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400004, guid: 45676db7f5fcd0c469341854f59be412,
-    type: 3}
-  m_PrefabInstance: {fileID: 1268180022601704901}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1268180022601605989 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: 45676db7f5fcd0c469341854f59be412,
-    type: 3}
-  m_PrefabInstance: {fileID: 1268180022601704901}
-  m_PrefabAsset: {fileID: 0}
 --- !u!23 &1268180022599417253 stripped
 MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2300000, guid: 45676db7f5fcd0c469341854f59be412,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 2300000, guid: 45676db7f5fcd0c469341854f59be412, type: 3}
+  m_PrefabInstance: {fileID: 1268180022601704901}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1268180022601605985 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100004, guid: 45676db7f5fcd0c469341854f59be412, type: 3}
   m_PrefabInstance: {fileID: 1268180022601704901}
   m_PrefabAsset: {fileID: 0}
 --- !u!205 &191020186083771336
@@ -243,6 +217,11 @@ LODGroup:
     renderers:
     - renderer: {fileID: 8514274859199961072}
   m_Enabled: 1
+--- !u!1 &1268180022601605989 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 45676db7f5fcd0c469341854f59be412, type: 3}
+  m_PrefabInstance: {fileID: 1268180022601704901}
+  m_PrefabAsset: {fileID: 0}
 --- !u!64 &1575763900492318361
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -257,3 +236,8 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: 45676db7f5fcd0c469341854f59be412, type: 3}
+--- !u!4 &1268180022601842497 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400004, guid: 45676db7f5fcd0c469341854f59be412, type: 3}
+  m_PrefabInstance: {fileID: 1268180022601704901}
+  m_PrefabAsset: {fileID: 0}

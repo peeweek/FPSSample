@@ -36,7 +36,7 @@ TagManager:
   - CharCollisionB
   - TeamAreaA
   - TeamAreaB
-  - 
+  - GI
   m_SortingLayers:
   - name: Default
     uniqueID: 0

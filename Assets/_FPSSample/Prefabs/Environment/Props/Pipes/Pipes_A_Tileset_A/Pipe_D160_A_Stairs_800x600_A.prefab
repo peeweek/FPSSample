@@ -27,6 +27,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6794153977554221518}
   m_RootOrder: 4
@@ -172,6 +173,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 3bb0819784bf73c4e8a2d98977d5f45b, type: 2}
+    - target: {fileID: 2300226, guid: 0b8bf31b07216754b9db699723fa2f77, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 20500000, guid: 0b8bf31b07216754b9db699723fa2f77, type: 3}
       propertyPath: m_FadeMode
       value: 1
@@ -182,16 +187,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b8bf31b07216754b9db699723fa2f77, type: 3}
---- !u!4 &6794153977554221518 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400002, guid: 0b8bf31b07216754b9db699723fa2f77,
-    type: 3}
-  m_PrefabInstance: {fileID: 6794153977554084684}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6794153977554053928 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 100452, guid: 0b8bf31b07216754b9db699723fa2f77,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 100452, guid: 0b8bf31b07216754b9db699723fa2f77, type: 3}
   m_PrefabInstance: {fileID: 6794153977554084684}
   m_PrefabAsset: {fileID: 0}
 --- !u!64 &3738553628681264713
@@ -208,3 +206,8 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300228, guid: 0b8bf31b07216754b9db699723fa2f77, type: 3}
+--- !u!4 &6794153977554221518 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400002, guid: 0b8bf31b07216754b9db699723fa2f77, type: 3}
+  m_PrefabInstance: {fileID: 6794153977554084684}
+  m_PrefabAsset: {fileID: 0}
