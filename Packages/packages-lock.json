@@ -1,11 +1,34 @@
 {
   "dependencies": {
+    "com.dbrizov.naughtyattributes": {
+      "version": "2.1.4",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
+    "com.unity.build-report-inspector": {
+      "version": "0.2.2-preview",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
     "com.unity.burst": {
       "version": "1.6.6",
       "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.unity.mathematics": "1.2.1"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.cinemachine": {
+      "version": "2.8.9",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.test-framework": "1.1.31"
       },
       "url": "https://packages.unity.com"
     },
@@ -30,6 +53,15 @@
       "depth": 0,
       "source": "registry",
       "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.inputsystem": {
+      "version": "1.4.2",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.uielements": "1.0.0"
+      },
       "url": "https://packages.unity.com"
     },
     "com.unity.mathematics": {
@@ -165,6 +197,45 @@
         "com.unity.shadergraph": "12.1.7",
         "com.unity.render-pipelines.core": "12.1.7"
       }
+    },
+    "net.peeweek.build-frontend": {
+      "version": "2.0.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.build-report-inspector": "0.2.2-preview"
+      },
+      "url": "https://package.openupm.com"
+    },
+    "net.peeweek.console": {
+      "version": "1.5.2",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
+    "net.peeweek.fpskit": {
+      "version": "1.0.1-preview",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.inputsystem": "1.4.0",
+        "com.unity.cinemachine": "2.8.0",
+        "com.unity.render-pipelines.core": "12.1.0",
+        "com.unity.shadergraph": "12.1.0"
+      },
+      "url": "https://package.openupm.com"
+    },
+    "net.peeweek.gameplay-ingredients": {
+      "version": "2021.3.2",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.cinemachine": "2.8.4",
+        "com.unity.timeline": "1.6.4",
+        "com.dbrizov.naughtyattributes": "2.1.4"
+      },
+      "url": "https://package.openupm.com"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",
