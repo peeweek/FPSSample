@@ -504,7 +504,7 @@ GameObject:
   - component: {fileID: 5605719379376502520}
   m_Layer: 0
   m_Name: FirstPersonController
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -579,8 +579,8 @@ MonoBehaviour:
   groundFriction: 5.7
   slopeSlideAngleThredhold: 55
   slopeSlideScale: 80
-  turnSpeed: 360
-  pitchSpeed: 250
+  turnSpeed: 180
+  pitchSpeed: 125
   minMaxPitch: {x: -80, y: 80}
   baseFieldOfView: 65
   viewHeightOffset: 0.25
@@ -635,7 +635,7 @@ MonoBehaviour:
   jumpImpulseSpeed: 9
   maxJumps: 2
   minDelayBetweenJumps: 0.35
-  dashSpeed: 10.5
+  dashSpeed: 7
   dashTransitionSpeed: 7
   dashForwardThreshold: 0.8
   dashFOV: 80
