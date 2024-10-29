@@ -18,8 +18,8 @@ static class SamplePlayFromHere
         player.name = "(Play from Here) " + prefab.name;
 
         // position the character correctly, so the current POV matches the player's height
-        var controller = player.GetComponent<GameplayIngredients.Controllers.FirstPersonController>();
-        player.transform.position = new Vector3(position.x, position.y - controller.PlayerHeight, position.z);
+        var controller = player.GetComponent<FPSKit.FirstPersonController>();
+        player.transform.position = new Vector3(position.x, position.y - 1.2f, position.z);
 
         // orient the player correctly
         var orient = forward;
